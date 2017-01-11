@@ -1,6 +1,6 @@
 package prob03;
 
-public class DropShip {
+public class DropShip extends Unit{
 	
 	// 현재 위치
 	private int x;
@@ -10,9 +10,9 @@ public class DropShip {
 		/* 지정된 위치로 이동 */ 
 	}
 	
-	void stop() { 
+	void stop(){}
 		/* 현재 위치에 정지 */ 
-	}
+	
 	
 	void load() {
 		/* 선택된 대상을 태운다.*/ 

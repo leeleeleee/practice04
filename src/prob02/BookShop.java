@@ -1,5 +1,7 @@
 package prob02;
 
+import java.util.Scanner;
+
 public class BookShop {
 
 	public static void main(String[] args) {
@@ -32,5 +34,9 @@ public class BookShop {
 		System.out.println("*****도서 정보 출력하기******");
 		displayBookInfo( books );
 	}
-
+	public static void displayBookInfo(Book[] books) {
+		for( Book book : books) {
+			System.out.println("책 제목: "+book.getTitle()+", 작가:"+book.getAuthor()+", 대여 유무:"+((book.getStateCode()==1)?"대여불가능":"대여 가능"));
+		}
+	}
 }
